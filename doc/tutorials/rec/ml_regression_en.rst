@@ -36,7 +36,7 @@ And the directory structure of :code:`demo/recommendation/data/ml-1m` is:
 
 Field config file
 '''''''''''''''''
-**Field config file** is used to specific the fields dataset and file format,
+**Field config file** is used to specify the fields of the dataset and the file format,
 i.e, specific **WHAT** type it is in each feature file.
 
 The field config file of ml-1m shows in :code:`demo/recommendation/data/config.json`.
