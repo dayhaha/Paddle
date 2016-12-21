@@ -1,0 +1,119 @@
+I1219 10:18:34.637485  4931 Util.cpp:154] commandline: /usr/local/bin/../opt/paddle/bin/paddle_trainer --config=cnn_mnist.py --dot_period=10 --log_period=100 --test_all_data_in_one_period=1 --use_gpu=0 --trainer_count=1 --num_passes=100 --save_dir=./cnn_mnist_model 
+I1219 10:18:34.637723  4931 Util.cpp:128] Calling runInitFunctions
+I1219 10:18:34.643174  4931 Util.cpp:142] Call runInitFunctions done.
+[INFO 2016-12-19 10:18:34,720 layers.py:1912] output for __conv_pool_0___conv: c = 20, h = 24, w = 24, size = 11520
+[INFO 2016-12-19 10:18:34,722 layers.py:2002] output for __conv_pool_0___pool: c = 20, h = 12, w = 12, size = 2880
+[INFO 2016-12-19 10:18:34,724 layers.py:1912] output for __conv_pool_1___conv: c = 50, h = 8, w = 8, size = 3200
+[INFO 2016-12-19 10:18:34,727 layers.py:2002] output for __conv_pool_1___pool: c = 50, h = 4, w = 4, size = 800
+I1219 10:18:34.735255  4931 Trainer.cpp:176] trainer mode: Normal
+I1219 10:18:34.858757  4931 PyDataProvider2.cpp:243] loading dataprovider mnist_provider::process
+I1219 10:18:34.860641  4931 PyDataProvider2.cpp:243] loading dataprovider mnist_provider::process
+W1219 10:18:34.860923  4931 Trainer.cpp:633] --test_all_data_in_one_period was deprecated, since we will always do test on all test set 
+I1219 10:18:34.861003  4931 GradientMachine.cpp:135] Initing parameters..
+I1219 10:18:34.871830  4931 GradientMachine.cpp:142] Init parameters done.
+I1219 10:18:40.286880  4933 ThreadLocal.cpp:38] thread use undeterministic rand seed:4934
+.........
+I1219 10:19:05.129182  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.359761 CurrentCost=0.359761 Eval: classification_error_evaluator=0.116484  CurrentEval: classification_error_evaluator=0.116484 
+.........
+I1219 10:19:28.178622  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.242591 CurrentCost=0.125422 Eval: classification_error_evaluator=0.0774609  CurrentEval: classification_error_evaluator=0.0384375 
+.........
+I1219 10:19:50.677253  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.191897 CurrentCost=0.0905093 Eval: classification_error_evaluator=0.0610417  CurrentEval: classification_error_evaluator=0.0282031 
+.........
+I1219 10:20:11.952641  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.164233 CurrentCost=0.0812405 Eval: classification_error_evaluator=0.0518945  CurrentEval: classification_error_evaluator=0.0244531 
+......I1219 10:20:26.452464  4931 TrainerInternal.cpp:181]  Pass=0 Batch=469 samples=60000 AvgCost=0.150903 Eval: classification_error_evaluator=0.0475 
+I1219 10:20:34.379051  4931 Tester.cpp:109]  Test samples=10000 cost=0.0606934 Eval: classification_error_evaluator=0.0201 
+I1219 10:20:34.389147  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00000
+I1219 10:20:34.450000  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00000
+.........
+I1219 10:20:55.236018  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0558979 CurrentCost=0.0558979 Eval: classification_error_evaluator=0.0175781  CurrentEval: classification_error_evaluator=0.0175781 
+.........
+I1219 10:21:15.968578  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.0549724 CurrentCost=0.0540468 Eval: classification_error_evaluator=0.0173047  CurrentEval: classification_error_evaluator=0.0170313 
+.........
+I1219 10:21:36.912948  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.0552949 CurrentCost=0.0559399 Eval: classification_error_evaluator=0.0173177  CurrentEval: classification_error_evaluator=0.0173438 
+.........
+I1219 10:21:57.717927  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0541613 CurrentCost=0.0507605 Eval: classification_error_evaluator=0.0170898  CurrentEval: classification_error_evaluator=0.0164063 
+......I1219 10:22:12.278779  4931 TrainerInternal.cpp:181]  Pass=1 Batch=469 samples=60000 AvgCost=0.0531276 Eval: classification_error_evaluator=0.0167 
+I1219 10:22:19.968849  4931 Tester.cpp:109]  Test samples=10000 cost=0.0404423 Eval: classification_error_evaluator=0.015 
+I1219 10:22:19.975706  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00001
+I1219 10:22:20.031425  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00001
+.........
+I1219 10:22:41.231765  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0407148 CurrentCost=0.0407148 Eval: classification_error_evaluator=0.01375  CurrentEval: classification_error_evaluator=0.01375 
+.........
+I1219 10:23:03.818117  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.037582 CurrentCost=0.0344492 Eval: classification_error_evaluator=0.0123828  CurrentEval: classification_error_evaluator=0.0110156 
+.........
+I1219 10:23:25.921949  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.0374308 CurrentCost=0.0371283 Eval: classification_error_evaluator=0.0119792  CurrentEval: classification_error_evaluator=0.0111719 
+.........
+I1219 10:23:48.151618  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0382509 CurrentCost=0.0407115 Eval: classification_error_evaluator=0.0119727  CurrentEval: classification_error_evaluator=0.0119531 
+......I1219 10:24:02.878698  4931 TrainerInternal.cpp:181]  Pass=2 Batch=469 samples=60000 AvgCost=0.0386186 Eval: classification_error_evaluator=0.0121667 
+I1219 10:24:10.721750  4931 Tester.cpp:109]  Test samples=10000 cost=0.039812 Eval: classification_error_evaluator=0.0117 
+I1219 10:24:10.735373  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00002
+I1219 10:24:10.776749  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00002
+.........
+I1219 10:24:31.967674  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0289016 CurrentCost=0.0289016 Eval: classification_error_evaluator=0.00820313  CurrentEval: classification_error_evaluator=0.00820313 
+.........
+I1219 10:24:53.345362  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.0283059 CurrentCost=0.0277101 Eval: classification_error_evaluator=0.00828125  CurrentEval: classification_error_evaluator=0.00835938 
+.........
+I1219 10:25:14.344691  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.0305473 CurrentCost=0.0350301 Eval: classification_error_evaluator=0.00916667  CurrentEval: classification_error_evaluator=0.0109375 
+.........
+I1219 10:25:35.391562  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0313271 CurrentCost=0.0336666 Eval: classification_error_evaluator=0.00970703  CurrentEval: classification_error_evaluator=0.0113281 
+......I1219 10:25:50.036239  4931 TrainerInternal.cpp:181]  Pass=3 Batch=469 samples=60000 AvgCost=0.0318302 Eval: classification_error_evaluator=0.00995 
+I1219 10:25:57.849627  4931 Tester.cpp:109]  Test samples=10000 cost=0.0305203 Eval: classification_error_evaluator=0.0099 
+I1219 10:25:57.853248  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00003
+I1219 10:25:57.923308  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00003
+.........
+I1219 10:26:20.172267  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0264135 CurrentCost=0.0264135 Eval: classification_error_evaluator=0.008125  CurrentEval: classification_error_evaluator=0.008125 
+.........
+I1219 10:26:41.905967  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.0290556 CurrentCost=0.0316977 Eval: classification_error_evaluator=0.00929687  CurrentEval: classification_error_evaluator=0.0104688 
+.........
+I1219 10:27:03.674049  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.0288397 CurrentCost=0.028408 Eval: classification_error_evaluator=0.00914062  CurrentEval: classification_error_evaluator=0.00882812 
+.........
+I1219 10:27:25.590109  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0297041 CurrentCost=0.0322971 Eval: classification_error_evaluator=0.00939453  CurrentEval: classification_error_evaluator=0.0101563 
+......I1219 10:27:40.748476  4931 TrainerInternal.cpp:181]  Pass=4 Batch=469 samples=60000 AvgCost=0.0310772 Eval: classification_error_evaluator=0.00993333 
+I1219 10:27:48.996109  4931 Tester.cpp:109]  Test samples=10000 cost=0.0357348 Eval: classification_error_evaluator=0.0126 
+I1219 10:27:49.002200  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00004
+I1219 10:27:49.034231  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00004
+.........
+I1219 10:28:11.031510  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0232146 CurrentCost=0.0232146 Eval: classification_error_evaluator=0.006875  CurrentEval: classification_error_evaluator=0.006875 
+.........
+I1219 10:28:37.178248  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.0229964 CurrentCost=0.0227783 Eval: classification_error_evaluator=0.00691406  CurrentEval: classification_error_evaluator=0.00695313 
+.........
+I1219 10:29:00.447062  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.0233551 CurrentCost=0.0240723 Eval: classification_error_evaluator=0.00731771  CurrentEval: classification_error_evaluator=0.008125 
+.........
+I1219 10:29:22.500449  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0251012 CurrentCost=0.0303396 Eval: classification_error_evaluator=0.00794922  CurrentEval: classification_error_evaluator=0.00984375 
+......I1219 10:29:39.193150  4931 TrainerInternal.cpp:181]  Pass=5 Batch=469 samples=60000 AvgCost=0.026369 Eval: classification_error_evaluator=0.0083 
+I1219 10:29:46.953265  4931 Tester.cpp:109]  Test samples=10000 cost=0.0398033 Eval: classification_error_evaluator=0.0114 
+I1219 10:29:46.962623  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00005
+I1219 10:29:47.009166  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00005
+.........
+I1219 10:30:13.002234  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0213978 CurrentCost=0.0213978 Eval: classification_error_evaluator=0.00617188  CurrentEval: classification_error_evaluator=0.00617188 
+.........
+I1219 10:30:44.344789  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.0214469 CurrentCost=0.0214961 Eval: classification_error_evaluator=0.00652344  CurrentEval: classification_error_evaluator=0.006875 
+.........
+I1219 10:31:12.753855  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.021913 CurrentCost=0.0228452 Eval: classification_error_evaluator=0.00669271  CurrentEval: classification_error_evaluator=0.00703125 
+.........
+I1219 10:31:38.974947  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0230489 CurrentCost=0.0264565 Eval: classification_error_evaluator=0.00697266  CurrentEval: classification_error_evaluator=0.0078125 
+......I1219 10:31:55.573381  4931 TrainerInternal.cpp:181]  Pass=6 Batch=469 samples=60000 AvgCost=0.0242712 Eval: classification_error_evaluator=0.00748333 
+I1219 10:32:05.272239  4931 Tester.cpp:109]  Test samples=10000 cost=0.0348804 Eval: classification_error_evaluator=0.0124 
+I1219 10:32:05.285233  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00006
+I1219 10:32:05.360548  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00006
+.........
+I1219 10:32:30.783493  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0178805 CurrentCost=0.0178805 Eval: classification_error_evaluator=0.00546875  CurrentEval: classification_error_evaluator=0.00546875 
+.........
+I1219 10:32:55.132567  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.0214687 CurrentCost=0.0250569 Eval: classification_error_evaluator=0.00667969  CurrentEval: classification_error_evaluator=0.00789063 
+.........
+I1219 10:33:21.484205  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.0217675 CurrentCost=0.0223653 Eval: classification_error_evaluator=0.00677083  CurrentEval: classification_error_evaluator=0.00695313 
+.........
+I1219 10:33:46.830786  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0226589 CurrentCost=0.0253332 Eval: classification_error_evaluator=0.00699219  CurrentEval: classification_error_evaluator=0.00765625 
+......I1219 10:34:05.747483  4931 TrainerInternal.cpp:181]  Pass=7 Batch=469 samples=60000 AvgCost=0.0230129 Eval: classification_error_evaluator=0.00698333 
+I1219 10:34:19.718170  4931 Tester.cpp:109]  Test samples=10000 cost=0.0408401 Eval: classification_error_evaluator=0.0132 
+I1219 10:34:19.729609  4931 GradientMachine.cpp:113] Saving parameters to ./cnn_mnist_model/pass-00007
+I1219 10:34:19.777796  4931 Util.cpp:229] copy cnn_mnist.py to ./cnn_mnist_model/pass-00007
+.........
+I1219 10:34:45.395501  4931 TrainerInternal.cpp:165]  Batch=100 samples=12800 AvgCost=0.0175362 CurrentCost=0.0175362 Eval: classification_error_evaluator=0.00523438  CurrentEval: classification_error_evaluator=0.00523438 
+.........
+I1219 10:35:10.045215  4931 TrainerInternal.cpp:165]  Batch=200 samples=25600 AvgCost=0.0189659 CurrentCost=0.0203956 Eval: classification_error_evaluator=0.00570312  CurrentEval: classification_error_evaluator=0.00617188 
+.........
+I1219 10:35:35.646014  4931 TrainerInternal.cpp:165]  Batch=300 samples=38400 AvgCost=0.0197273 CurrentCost=0.0212501 Eval: classification_error_evaluator=0.00606771  CurrentEval: classification_error_evaluator=0.00679687 
+.........
+I1219 10:35:59.425643  4931 TrainerInternal.cpp:165]  Batch=400 samples=51200 AvgCost=0.0206472 CurrentCost=0.023407 Eval: classification_error_evaluator=0.00619141  CurrentEval: classification_error_evaluator=0.0065625 
+......I1219 10:36:15.750541  4931 TrainerInternal.cpp:181]  Pass=8 Batch=469 samples=60000 AvgCost=0.0212319 Eval: classification_error_evaluator=0.00641667 

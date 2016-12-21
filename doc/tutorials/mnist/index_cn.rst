@@ -37,9 +37,10 @@ MNIST数据
   MNIST的每条数据可以分为两部分：一张手写字符图片和对应的标签。标签对应着0~9是个数字，而图片
   则是28X28的像素矩阵，我们随机选取训练集中的10张图片进行绘制，并给出标签集中对应的标签：
 
-  .. code-block::  python
-
-      pass
+  .. literalinclude::  ../../../demo/mnist/draw_data.py
+      :language:    python
+      :line:    14-56
+      :linenos:
 
   .. image::    src/mnist_image.jpg
       :align:   center
@@ -47,7 +48,7 @@ MNIST数据
 
   .. code-block::  python
 
-      label: [6, 6, 6, 3, 7, 3, 0, 7, 7, 9]
+      label: [4, 7, 8, 0, 7, 7, 5, 3, 6, 8]
   
 
 

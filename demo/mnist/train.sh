@@ -13,9 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 set -e
-config=vgg_16_mnist.py
-output=./mnist_vgg_model
-log=train.log
+#config=vgg_16_mnist.py
+#output=./mnist_vgg_model
+#log=train.log
+#config=mlp_mnist.py
+#output=./mlp_mnist_model
+#log=mlp_train.log
+config=cnn_mnist.py
+output=./cnn_mnist_model
+log=cnn_train.log
+
+
 
 paddle train \
 --config=$config \
